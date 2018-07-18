@@ -1,0 +1,2 @@
+transform-class-properties used in .babelrc helps reduce the confusion caused by this binding and allows use of arrow functions
+transform-object-rest-spread  used in .babelrc file to allow use of es6 object spread operator
