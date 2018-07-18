@@ -29,7 +29,7 @@ module.exports = (env) => {
                             }
                         },
                         {
-                            loader: 'sass-laoder',
+                            loader: 'sass-loader',
                             options: {
                                 sourceMap: true
                             }
