@@ -11,7 +11,7 @@ test('should render Header correctly', ()=> {
     // console.log(renderer.getRenderOutput());
     const wrapper = shallow(<Header />);
 
-    expect(wrapper.find('NavLink')).toHaveLength((4));
+    expect(wrapper.find('NavLink')).toHaveLength((2));
     expect(wrapper).toMatchSnapshot();
 
 

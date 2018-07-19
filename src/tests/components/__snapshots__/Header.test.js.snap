@@ -27,31 +27,16 @@ ShallowWrapper {
           exact={true}
           to="/"
         >
-          Home
+          Dashboard
         </NavLink>,
+        <br />,
         <NavLink
           activeClassName="is-active"
           aria-current="page"
           exact={true}
           to="/create"
         >
-          Add Expense
-        </NavLink>,
-        <NavLink
-          activeClassName="is-active"
-          aria-current="page"
-          exact={true}
-          to="/edit"
-        >
-          Edit Expense
-        </NavLink>,
-        <NavLink
-          activeClassName="is-active"
-          aria-current="page"
-          exact={true}
-          to="/help"
-        >
-          Help
+          Create Expense
         </NavLink>,
       ],
     },
@@ -75,13 +60,22 @@ ShallowWrapper {
         "props": Object {
           "activeClassName": "is-active",
           "aria-current": "page",
-          "children": "Home",
+          "children": "Dashboard",
           "exact": true,
           "to": "/",
         },
         "ref": null,
-        "rendered": "Home",
+        "rendered": "Dashboard",
         "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
       },
       Object {
         "instance": null,
@@ -90,42 +84,12 @@ ShallowWrapper {
         "props": Object {
           "activeClassName": "is-active",
           "aria-current": "page",
-          "children": "Add Expense",
+          "children": "Create Expense",
           "exact": true,
           "to": "/create",
         },
         "ref": null,
-        "rendered": "Add Expense",
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "is-active",
-          "aria-current": "page",
-          "children": "Edit Expense",
-          "exact": true,
-          "to": "/edit",
-        },
-        "ref": null,
-        "rendered": "Edit Expense",
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "is-active",
-          "aria-current": "page",
-          "children": "Help",
-          "exact": true,
-          "to": "/help",
-        },
-        "ref": null,
-        "rendered": "Help",
+        "rendered": "Create Expense",
         "type": [Function],
       },
     ],
@@ -147,31 +111,16 @@ ShallowWrapper {
             exact={true}
             to="/"
           >
-            Home
+            Dashboard
           </NavLink>,
+          <br />,
           <NavLink
             activeClassName="is-active"
             aria-current="page"
             exact={true}
             to="/create"
           >
-            Add Expense
-          </NavLink>,
-          <NavLink
-            activeClassName="is-active"
-            aria-current="page"
-            exact={true}
-            to="/edit"
-          >
-            Edit Expense
-          </NavLink>,
-          <NavLink
-            activeClassName="is-active"
-            aria-current="page"
-            exact={true}
-            to="/help"
-          >
-            Help
+            Create Expense
           </NavLink>,
         ],
       },
@@ -195,13 +144,22 @@ ShallowWrapper {
           "props": Object {
             "activeClassName": "is-active",
             "aria-current": "page",
-            "children": "Home",
+            "children": "Dashboard",
             "exact": true,
             "to": "/",
           },
           "ref": null,
-          "rendered": "Home",
+          "rendered": "Dashboard",
           "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
         },
         Object {
           "instance": null,
@@ -210,42 +168,12 @@ ShallowWrapper {
           "props": Object {
             "activeClassName": "is-active",
             "aria-current": "page",
-            "children": "Add Expense",
+            "children": "Create Expense",
             "exact": true,
             "to": "/create",
           },
           "ref": null,
-          "rendered": "Add Expense",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "is-active",
-            "aria-current": "page",
-            "children": "Edit Expense",
-            "exact": true,
-            "to": "/edit",
-          },
-          "ref": null,
-          "rendered": "Edit Expense",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "is-active",
-            "aria-current": "page",
-            "children": "Help",
-            "exact": true,
-            "to": "/help",
-          },
-          "ref": null,
-          "rendered": "Help",
+          "rendered": "Create Expense",
           "type": [Function],
         },
       ],
