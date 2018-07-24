@@ -1,21 +1,14 @@
 import uuid from "uuid";
+import database from "../../src/firebase/firebase";
+//components call action generator
+//action generator returns object
+//component calls action generator dispatches function
+// function runs (has the ability to dispatch other and do whatever it wants)
 
-export const addExpense = (
-    {
-    description = "",
-    note = "", 
-    amount = 0, 
-    createdAt = undefined
-    } = {}
-    ) => ({
+
+export const addExpense = (expense) => ({
     type: "ADD_EXPENSE",
-    expense: {
-        id: uuid(),
-        description,
-        note,
-        amount,
-        createdAt
-    }
+    expense
 })
 
 // REMOVE EXPENSE
@@ -29,3 +22,26 @@ export const editExpense = (id, updates) => ({
     id,
     updates
 })
+
+export const startAddExpense = (expenseData = {}) => {
+    return (dispatch)=>{
+        const {
+            description = "",
+            note = '',
+            createdAt = 0,
+            amount = 0
+        } = expenseData;
+
+        const expense = { description, note, createdAt, amount};
+
+       return database.ref('expenses').push(expense)
+            .then((snapshot)=>{
+                dispatch(addExpense({
+                    id: snapshot.key,
+                    ...expense
+                }))
+            });
+
+
+    }
+}
