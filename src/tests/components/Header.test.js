@@ -1,15 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Header from "../../components/Header";
+import {Header} from "../../components/Header";
+import {startLogout} from "../../actions/auth";
+
 
 
 test('should render Header correctly', ()=> {
 
-    // const renderer = new ReactShallowRenderer();
-    // renderer.render(<Header />)
-    // expect(renderer.getRenderOutput()).toMatchSnapshot();
-    // console.log(renderer.getRenderOutput());
-    const wrapper = shallow(<Header />);
+    const wrapper = shallow(<Header startLogout={()=>{}} />);
 
     expect(wrapper.find('NavLink')).toHaveLength((2));
     expect(wrapper).toMatchSnapshot();
@@ -18,4 +16,12 @@ test('should render Header correctly', ()=> {
 
 });
 
+test('should call startLogout on button click', ()=>{
 
+    let startLogout = jest.fn();
+
+    const wrapper = shallow(<Header startLogout={startLogout}/>);
+    wrapper.find('button').simulate('click');
+    expect(startLogout).toHaveBeenCalled();
+
+})
