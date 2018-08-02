@@ -9,7 +9,7 @@ test('should render Header correctly', ()=> {
 
     const wrapper = shallow(<Header startLogout={()=>{}} />);
 
-    expect(wrapper.find('NavLink')).toHaveLength((2));
+    expect(wrapper.find('Link')).toHaveLength(1);
     expect(wrapper).toMatchSnapshot();
 
 
